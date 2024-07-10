@@ -277,7 +277,7 @@ static inline void setHWCapability(void *that, HWCapability capability, T value)
                     break;
             }
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             switch (capability) {
                 case HWCapability::DisplayPipeCount:
                     getMember<T>(that, 0x30 + HWCapabilityVentura::DisplayPipeCount) = value;

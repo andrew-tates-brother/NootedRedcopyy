@@ -286,7 +286,7 @@ CAILResult X5000HWLibs::pspBootloaderLoadSos10(void *ctx) {
         case KernelVersion::BigSur... KernelVersion::Monterey:
             fieldBase = 0x3124;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             fieldBase = 0x391C;
             break;
         default:
@@ -306,7 +306,7 @@ CAILResult X5000HWLibs::pspSecurityFeatureCapsSet10(void *ctx) {
         case KernelVersion::BigSur... KernelVersion::Monterey:
             fieldBase = 0x3120;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             fieldBase = 0x3918;
             break;
         default:
@@ -336,7 +336,7 @@ CAILResult X5000HWLibs::pspSecurityFeatureCapsSet12(void *ctx) {
         case KernelVersion::BigSur... KernelVersion::Monterey:
             fieldBase = 0x3120;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             fieldBase = 0x3918;
             break;
         default:
@@ -365,7 +365,7 @@ CAILResult X5000HWLibs::wrapPspCmdKmSubmit(void *ctx, void *cmd, void *param3, v
         case KernelVersion::BigSur... KernelVersion::Monterey:
             off = 0xAF8;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             off = 0xB48;
             break;
         default:
@@ -507,7 +507,7 @@ CAILResult X5000HWLibs::smuInternalSwInit(void *ctx) {
         case KernelVersion::BigSur... KernelVersion::Monterey:
             fieldBase = 0x280;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             fieldBase = 0x2D0;
             break;
         default:
@@ -616,7 +616,7 @@ CAILResult X5000HWLibs::wrapSmu901CreateFunctionPointerList(void *ctx) {
         case KernelVersion::Monterey:
             fieldBase = 0x648;
             break;
-        case KernelVersion::Ventura... KernelVersion::Sequoia:
+        case KernelVersion::Ventura... KernelVersion::Sonoma:
             fieldBase = 0x6C0;
             break;
         default:
